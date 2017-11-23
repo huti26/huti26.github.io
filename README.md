@@ -1,3 +1,3 @@
-# Iro
+# New Tab Page
 
-A startpage. with colors.
+A very simple new tab page, which I host over here, so it works with FF57+.
