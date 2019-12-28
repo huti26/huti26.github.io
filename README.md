@@ -1,3 +1,3 @@
-# New Tab Page
-
-A very simple new tab page, which I host over here, so it works with FF57+.
+# To Do
+add the actual calculation to the tft unluck calculator
+style inputboxes and buttons
