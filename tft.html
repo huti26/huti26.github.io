@@ -8,6 +8,7 @@
     <script src="./bootstrap/js/bootstrap.js"></script>
     <script src="js/tft.js"></script>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
 </head>
 
 <body>
@@ -32,9 +33,16 @@
                     <a class="nav-link" href="tft.html">Teamfight Tactics</a>
                 </li>
             </ul>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">🌙</label>
+            </div>
         </div>
 
     </nav>
+
+
+
 
     <div class="container ">
 
@@ -518,7 +526,12 @@
             </div>
         </div>
 
+        <footer>
 
+        </footer>
+
+        <!-- got to load it at the end -->
+        <script src="./js/dark-mode-switch.js"></script>
 
 
 </body>
