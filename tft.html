@@ -6,6 +6,7 @@
     <title>huti</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="js/tft.js"></script>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
 
@@ -38,270 +39,239 @@
     <div class="container ">
 
         <div class="pt-3">
-            <h1>Unluck Calculator</h1>
-            <h2>Calculates the Chance to not hit a Champion</h2>
+            <h1>Hit Calculator</h1>
         </div>
 
         <div class="py-5">
             <h2>Common Scenarios</h2>
-            <div class="row py-1 pt-3">
-                <div class="col">
-                    Unit has not been picked at all yet, other picked units of the same tier neglected, 50 Gold rolled:
-                </div>
-                <div class="col">
-                </div>
-            </div>
+            <p> There are basically 3 columns. First one assumes the desired Champion has not been picked and neglects
+                other Champions of the same tier. The next two specify the scenario. The second one adds how many times
+                the desired Champion has already been picked. The last one takes other Champions of the same tier
+                already being picked into account. 50 Gold rolled.</p>
+            <p>
+                95,78% is the Chance to hit a Tier 3 Unit while being Level 6. 76,37% is the Chance to hit it, after it
+                has been picked 9 times already. 78,66% is the Chance to hit it, after it has both been picked 9 times
+                and other Champions of the same Tier being picked 12 times.
+            </p>
+
+
             <div class="row py-1">
                 <div class="col">
                     T3 Unit on 6
                 </div>
                 <div class="col">
-                    100%
+                    95.78%
+                </div>
+                <div class="col">
+                    9 times picked
+                </div>
+                <div class="col">
+                    76.37%
+                </div>
+                <div class="col">
+                    12 others picked
+                </div>
+                <div class="col">
+                    78.66%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     Epic on 6
                 </div>
                 <div class="col">
-                    100%
+                    71.53%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    48.30%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    51.15%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     T3 Unit on 7
                 </div>
                 <div class="col">
-                    100%
+                    96.94%
+                </div>
+                <div class="col">
+                    9 times picked
+                </div>
+                <div class="col">
+                    79.56%
+                </div>
+                <div class="col">
+                    12 others picked
+                </div>
+                <div class="col">
+                    81.73%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     Epic on 7
                 </div>
                 <div class="col">
-                    100%
+                    84.88%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    62.87%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    65.91%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     Legendary on 7
                 </div>
                 <div class="col">
-                    100%
+                    30.07%
+                </div>
+                <div class="col">
+                    3 times picked
+                </div>
+                <div class="col">
+                    23.01%
+                </div>
+                <div class="col">
+                    6 others picked
+                </div>
+                <div class="col">
+                    24.96%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     Epic on 8
                 </div>
                 <div class="col">
-                    100%
+                    95.20%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    79.59%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    82.20%
                 </div>
             </div>
+
             <div class="row py-1">
                 <div class="col">
                     Legendary on 8
                 </div>
                 <div class="col">
-                    100%
+                    65.91%
+                </div>
+                <div class="col">
+                    3 times picked
+                </div>
+                <div class="col">
+                    54.44%
+                </div>
+                <div class="col">
+                    6 others picked
+                </div>
+                <div class="col">
+                    57.84%
                 </div>
             </div>
-            <div class="row py-1 pt-3">
-                <div class="col">
-                    Same scenario, but the desired Unit has been picked a couple of times:
-                </div>
-                <div class="col">
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    T3 Unit on 6, 9 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 6, 6 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    T3 Unit on 7, 9 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 7, 6 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Legendary on 7, 3 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 8, 6 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Legendary on 8, 3 times picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1 pt-3">
-                <div class="col">
-                    Same scenario, but this time we dont neglect other Champions picked:
-                </div>
-                <div class="col">
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    T3 Unit on 6, 9 times picked, 12 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 6, 6 times picked, 9 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    T3 Unit on 7, 9 times picked, 12 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 7, 6 times picked, 9 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Legendary on 7, 3 times picked, 6 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Epic on 8, 6 times picked, 9 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
-            <div class="row py-1">
-                <div class="col">
-                    Legendary on 8, 3 times picked, 6 others picked
-                </div>
-                <div class="col">
-                    100%
-                </div>
-            </div>
+
         </div>
 
 
         <div class="py-5">
             <h2>Custom Scenario</h2>
-            <form>
-                <div class="row py-2">
-                    <div class="col">
-                        <select class="custom-select">
-                            <option selected>Desired Champion Tier</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <select class="custom-select">
-                            <option selected>Your Level</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
-                    </div>
-
+            <div class="row py-2">
+                <div class="col">
+                    <select class="custom-select " id="tier" required>
+                        <option selected>Desired Champion Tier</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="custom-select" id="level" required>
+                        <option selected>Your Level</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
                 </div>
 
-                <div class="row py-2">
-                    <div class="col">
-                        Your Gold
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="50">
-                    </div>
-                </div>
+            </div>
 
-                <div class="row py-2">
-                    <div class="col">
-                        Amount of times your desired Champion has already been picked
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="0">
-                    </div>
+            <div class="row py-2">
+                <div class="col">
+                    Your Gold
                 </div>
-
-                <div class="row py-2">
-                    <div class="col">
-                        Amount of times other Champions of the same Tier have already been picked
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="0">
-                    </div>
+                <div class="col">
+                    <input type="number" min="1" max="200" class="form-control" value="50" id="gold" required>
                 </div>
+            </div>
 
-                <div class="row py-2">
-                    <div class="col">
-                        <button onclick="calc();">Calculate</button>
-                        <input type="text" id="result" />
-                    </div>
+            <div class="row py-2">
+                <div class="col">
+                    Amount of times your desired Champion has already been picked
                 </div>
+                <div class="col">
+                    <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked" required>
+                </div>
+            </div>
 
-            </form>
+            <div class="row py-2">
+                <div class="col">
+                    Amount of times other Champions of the same Tier have already been picked
+                </div>
+                <div class="col">
+                    <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked"
+                        required>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col">
+                    <button onclick="tftUnluckCalc()" class="btn btn-dark">Calculate</button>
+                </div>
+                <div class="col">
+                    <p id="custom-tft-scenario-result"></p>
+                </div>
+            </div>
+
 
 
 
@@ -348,6 +318,207 @@
 
 
     </div>
+
+
+    <div class="container ">
+
+        <div class="py-5">
+            <h2>Common Scenarios - more comfortable for mobile users</h2>
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Unit has not been picked at all yet, other picked units of the same tier neglected, 50 Gold rolled:
+                </div>
+                <div class="col">
+                    Chance to hit
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6
+                </div>
+                <div class="col">
+                    95.78%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6
+                </div>
+                <div class="col">
+                    71.53%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7
+                </div>
+                <div class="col">
+                    96.94%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7
+                </div>
+                <div class="col">
+                    84.88%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7
+                </div>
+                <div class="col">
+                    30.07%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8
+                </div>
+                <div class="col">
+                    95.20%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+            </div>
+
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Same scenario, but the desired Unit has been picked a couple of times:
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6, 9 times picked
+                </div>
+                <div class="col">
+                    76.37%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6, 6 times picked
+                </div>
+                <div class="col">
+                    48.30%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7, 9 times picked
+                </div>
+                <div class="col">
+                    79.56%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7, 6 times picked
+                </div>
+                <div class="col">
+                    62.87%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7, 3 times picked
+                </div>
+                <div class="col">
+                    23.01%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8, 6 times picked
+                </div>
+                <div class="col">
+                    79.59%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8, 3 times picked
+                </div>
+                <div class="col">
+                    54.44%
+                </div>
+            </div>
+
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Same scenario, but this time we dont neglect other Champions picked:
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6, 9 times picked, 12 others picked
+                </div>
+                <div class="col">
+                    78.66%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    51.15%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7, 9 times picked, 12 others picked
+                </div>
+                <div class="col">
+                    81.73%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7, 3 times picked, 6 others picked
+                </div>
+                <div class="col">
+                    24.96%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    82.20%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8, 3 times picked, 6 others picked
+                </div>
+                <div class="col">
+                    57.84%
+                </div>
+            </div>
+        </div>
+
+
 
 
 </body>
