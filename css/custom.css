@@ -29,6 +29,11 @@ body {
 }
 
 
+.toggle-handle{
+  background-color: #1E1E1E ;
+}
+
+
 /* DARK THEME */
 
 
@@ -40,4 +45,11 @@ body {
 
 [data-theme="dark"] .navbar {
   background-color: #252526 !important;
+}
+
+
+
+[data-theme="dark"] .toggle-handle{
+  background-color: rgb(221, 221, 221);
+
 }

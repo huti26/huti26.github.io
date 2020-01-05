@@ -14,6 +14,12 @@
 
     <script src="js/tft.js"></script>
 
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="./js/dark-mode-switch.js"></script>
+
+
 </head>
 
 <body>
@@ -40,10 +46,11 @@
                 </ul>
             </div>
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-                <label class="custom-control-label" for="darkSwitch">
-                    <i class="far fa-moon falign"></i>
-                </label>
+                <input type="checkbox" id="darkSwitch" data-toggle="toggle" data-size="small" data-onstyle="light"
+                    data-offstyle="dark" data-on="<i class='far fa-moon falign'></i>"
+                    data-off="<i class='far fa-sun falign'></i>" />
+                <div id="console-event"></div>
+
             </div>
         </div>
     </nav>
@@ -542,7 +549,6 @@
     </footer>
 
     <!-- got to load it at the end -->
-    <script src="./js/dark-mode-switch.js"></script>
 
 
 </body>
