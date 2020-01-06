@@ -66,7 +66,8 @@
             <h1>Hit Calculator</h1>
         </div>
 
-        <div name="common scenarios" class="pt-1">
+        <!-- hidden on phone-->
+        <div name="common scenarios" class="pt-1 d-none d-sm-block">
             <h2>Common Scenarios</h2>
             <p> There are basically 3 columns. First one assumes the desired Champion has not been picked and neglects
                 other Champions of the same tier. The next two specify the scenario. The second one adds how many times
@@ -228,122 +229,9 @@
 
         </div>
 
-        <div name="custom scenario" class="pt-4">
-            <h2>Custom Scenario</h2>
-            <div class="row py-2">
-                <div class="col">
-                    <select class="custom-select " id="tier" required>
-                        <option selected>Desired Champion Tier</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <select class="custom-select" id="level" required>
-                        <option selected>Your Level</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                    </select>
-                </div>
-
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Your Gold
-                </div>
-                <div class="col">
-                    <input type="number" min="1" max="200" class="form-control" value="50" id="gold" required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Amount of times your desired Champion has already been picked
-                </div>
-                <div class="col">
-                    <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked" required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Amount of times other Champions of the same Tier have already been picked
-                </div>
-                <div class="col">
-                    <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked"
-                        required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    <button onclick="tftUnluckCalc()" class="btn btn-dark">Calculate</button>
-                </div>
-                <div class="col">
-                    <p id="custom-tft-scenario-result"></p>
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-
-        <div name="how it calculates" class="pt-4">
-            <h2>How it calculates</h2>
-            <p>
-                Imagine you are trying to fish for a Legendary after hitting Level 7. The Chance to hit a Legendary is
-                2%.
-                The
-                Chance to hit your desired Legendary is the amount of times that Champion is in the pool divided by the
-                Amount
-                of all Legendaries, which are still in the Pool. There are 7 Legendary units as of right now
-                (02.01.2020).
-                Each Unit is 10 times in the Pool. So the Chance to hit your desired Legendary, assuming 0 Legendaries
-                have
-                been picked so
-                far
-                is:
-
-            </p>
-            <p>
-                2% * (10 / 7 * 10) which is about 0,28%.
-
-            </p>
-            <p>
-                Therefore the Chance to not hit the desired Legendary is 100% - 0,28% which is 99,72%.
-                Assuming you have 50 Gold, which gives you 25 Rerolls, each Reroll gives you 5 Throws, 125 Throws in
-                total.
-                So the Chance, to not hit your Legendary is (99,72%) to the power of 125, which is about 70%. So you
-                would
-                get
-                your desired Legendary 30% of the time.
-            </p>
-            <p>
-                <a href="https://imgur.com/a/lABHe7l" target="_blank">Source of Data</a>
-            </p>
-            <p>
-                If you notice any mistakes in my Calculation, I would be very happy, if you were to contact <a
-                    href="about.html">me</a>.
-            </p>
-
-
-        </div>
-
-        <div name="custom scenario mobile version" class="pt-4">
-            <h2>Common Scenarios - more comfortable for mobile users</h2>
+        <!-- only visible on phone-->
+        <div name="common scenario mobile version" class="pt-1 d-block d-sm-none">
+            <h2>Common Scenarios</h2>
             <div class="row py-1 pt-3">
                 <div class="col">
                     Unit has not been picked at all yet, other picked units of the same tier neglected, 50 Gold rolled:
@@ -538,6 +426,119 @@
             </div>
         </div>
 
+        <div name="custom scenario" class="pt-4">
+            <h2>Custom Scenario</h2>
+            <div class="row py-2">
+                <div class="col">
+                    <select class="custom-select " id="tier" required>
+                        <option selected>Desired Champion Tier</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="custom-select" id="level" required>
+                        <option selected>Your Level</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row py-2">
+                <div class="col">
+                    Your Gold
+                </div>
+                <div class="col">
+                    <input type="number" min="1" max="200" class="form-control" value="50" id="gold" required>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col">
+                    Amount of times your desired Champion has already been picked
+                </div>
+                <div class="col">
+                    <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked" required>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col">
+                    Amount of times other Champions of the same Tier have already been picked
+                </div>
+                <div class="col">
+                    <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked"
+                        required>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col">
+                    <button onclick="tftUnluckCalc()" class="btn btn-dark">Calculate</button>
+                </div>
+                <div class="col">
+                    <p id="custom-tft-scenario-result"></p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div name="how it calculates" class="pt-4">
+            <h2>How it calculates</h2>
+            <p>
+                Imagine you are trying to fish for a Legendary after hitting Level 7. The Chance to hit a Legendary is
+                2%.
+                The
+                Chance to hit your desired Legendary is the amount of times that Champion is in the pool divided by the
+                Amount
+                of all Legendaries, which are still in the Pool. There are 7 Legendary units as of right now
+                (02.01.2020).
+                Each Unit is 10 times in the Pool. So the Chance to hit your desired Legendary, assuming 0 Legendaries
+                have
+                been picked so
+                far
+                is:
+
+            </p>
+            <p>
+                2% * (10 / 7 * 10) which is about 0,28%.
+
+            </p>
+            <p>
+                Therefore the Chance to not hit the desired Legendary is 100% - 0,28% which is 99,72%.
+                Assuming you have 50 Gold, which gives you 25 Rerolls, each Reroll gives you 5 Throws, 125 Throws in
+                total.
+                So the Chance, to not hit your Legendary is (99,72%) to the power of 125, which is about 70%. So you
+                would
+                get
+                your desired Legendary 30% of the time.
+            </p>
+            <p>
+                <a href="https://imgur.com/a/lABHe7l" target="_blank">Source of Data</a>
+            </p>
+            <p>
+                If you notice any mistakes in my Calculation, I would be very happy, if you were to contact <a
+                    href="about.html">me</a>.
+            </p>
+
+
+        </div>
 
     </div>
 
