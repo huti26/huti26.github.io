@@ -1,0 +1,461 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>huti</title>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c3bbeb30ce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="../js/dark-mode-switch-tft.js"></script>
+
+    <script src="../js/tft.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container ">
+            <a class="navbar-brand" href="../about">H26</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../">Home </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../lol">League of Legends</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Teamfight Tactics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="simple-examples">Simple Examples</a>
+                            <a class="dropdown-item" href="simple-calculator">Simple Calculator</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="how-it-calculates">How it calculates</a>
+                        </div>
+                    </li>
+                </ul>
+                <div name="theme-switch">
+                    <input type="checkbox" id="darkSwitch" data-toggle="toggle" data-size="small" data-onstyle="light"
+                        data-offstyle="dark" data-on="<i class='far fa-moon falign'></i>"
+                        data-off="<i class='far fa-sun falign'></i>" checked="false" />
+                    <div id="console-event"></div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container ">
+
+        <div class="pt-3">
+            <h1>Hit Calculator</h1>
+        </div>
+
+        <!-- d-none hides on all, d-sm-block makes it visible on all devices bigger/equal to sm -->
+        <div name="common scenarios" class="pt-1 d-none d-sm-block">
+            <h2>Common Scenarios</h2>
+            <p>
+                95,78% is the Chance to hit a Tier 3 Unit while being Level 6.
+            </p>
+            <p>
+                76,37% is the Chance to hit it, after it
+                has been picked 9 times already.
+            </p>
+            <p>
+                78,66% is the Chance to hit it, after it has both been picked 9 times
+                and other Champions of the same Tier being picked 12 times.
+            </p>
+            <p>
+                50 Gold rolled.
+            </p>
+
+
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6
+                </div>
+                <div class="col">
+                    95.78%
+                </div>
+                <div class="col">
+                    9 times picked
+                </div>
+                <div class="col">
+                    76.37%
+                </div>
+                <div class="col">
+                    12 others picked
+                </div>
+                <div class="col">
+                    78.66%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6
+                </div>
+                <div class="col">
+                    71.53%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    48.30%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    51.15%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7
+                </div>
+                <div class="col">
+                    96.94%
+                </div>
+                <div class="col">
+                    9 times picked
+                </div>
+                <div class="col">
+                    79.56%
+                </div>
+                <div class="col">
+                    12 others picked
+                </div>
+                <div class="col">
+                    81.73%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7
+                </div>
+                <div class="col">
+                    84.88%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    62.87%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7
+                </div>
+                <div class="col">
+                    30.07%
+                </div>
+                <div class="col">
+                    3 times picked
+                </div>
+                <div class="col">
+                    23.01%
+                </div>
+                <div class="col">
+                    6 others picked
+                </div>
+                <div class="col">
+                    24.96%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8
+                </div>
+                <div class="col">
+                    95.20%
+                </div>
+                <div class="col">
+                    6 times picked
+                </div>
+                <div class="col">
+                    79.59%
+                </div>
+                <div class="col">
+                    9 others picked
+                </div>
+                <div class="col">
+                    82.20%
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+                <div class="col">
+                    3 times picked
+                </div>
+                <div class="col">
+                    54.44%
+                </div>
+                <div class="col">
+                    6 others picked
+                </div>
+                <div class="col">
+                    57.84%
+                </div>
+            </div>
+
+        </div>
+
+        <!-- only visible on phone-->
+        <div name="common scenario mobile version" class="pt-1 d-block d-sm-none">
+            <h2>Common Scenarios</h2>
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Unit has not been picked at all yet, other picked units of the same tier neglected, 50 Gold rolled:
+                </div>
+                <div class="col">
+                    Chance to hit
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6
+                </div>
+                <div class="col">
+                    95.78%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6
+                </div>
+                <div class="col">
+                    71.53%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7
+                </div>
+                <div class="col">
+                    96.94%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7
+                </div>
+                <div class="col">
+                    84.88%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7
+                </div>
+                <div class="col">
+                    30.07%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8
+                </div>
+                <div class="col">
+                    95.20%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+            </div>
+
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Same scenario, but the desired Unit has been picked a couple of times:
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6, 9 times picked
+                </div>
+                <div class="col">
+                    76.37%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6, 6 times picked
+                </div>
+                <div class="col">
+                    48.30%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7, 9 times picked
+                </div>
+                <div class="col">
+                    79.56%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7, 6 times picked
+                </div>
+                <div class="col">
+                    62.87%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7, 3 times picked
+                </div>
+                <div class="col">
+                    23.01%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8, 6 times picked
+                </div>
+                <div class="col">
+                    79.59%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8, 3 times picked
+                </div>
+                <div class="col">
+                    54.44%
+                </div>
+            </div>
+
+            <div class="row py-1 pt-3">
+                <div class="col">
+                    Same scenario, but this time we dont neglect other Champions picked:
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 6, 9 times picked, 12 others picked
+                </div>
+                <div class="col">
+                    78.66%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 6, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    51.15%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    T3 Unit on 7, 9 times picked, 12 others picked
+                </div>
+                <div class="col">
+                    81.73%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 7, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    65.91%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 7, 3 times picked, 6 others picked
+                </div>
+                <div class="col">
+                    24.96%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Epic on 8, 6 times picked, 9 others picked
+                </div>
+                <div class="col">
+                    82.20%
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col">
+                    Legendary on 8, 3 times picked, 6 others picked
+                </div>
+                <div class="col">
+                    57.84%
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="py-5">
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+
+
+</body>
+
+
+</html>
