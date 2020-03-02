@@ -33,3 +33,28 @@ body {
 .toggle-handle{
   background-color: #1E1E1E ;
 }
+
+/* dark form */
+.form-control, .form-control:focus, .custom-select{
+  background-color: #1E1E1E ;
+  color: #f8f9fa;
+  border-color: #000000;
+}
+
+.form-control:focus, .custom-select:focus{
+  box-shadow: 0 0 0 0.2rem rgba(100, 82, 86, 1);
+  border-color: #000000;
+}
+
+/* hide arrow of number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
