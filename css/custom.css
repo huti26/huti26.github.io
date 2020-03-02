@@ -2,6 +2,7 @@
   --pastel-pink: #ffd1dc;
   --pastel-blue: #aec6cf;
   --pastel-yellow: #fdfd96;
+  --pastel-purple: #b39eb5;
 }
 
 
@@ -93,4 +94,26 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
+}
+
+/* link styling */
+
+/* unvisited link */
+a:link {
+  color: var(--pastel-yellow);
+}
+
+/* visited link */
+a:visited {
+  color: var(--pastel-blue);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--pastel-pink);
+}
+
+/* selected link */
+a:active {
+  color: var(--pastel-purple);
 }
