@@ -115,7 +115,7 @@ a:active {
   color: var(--pastel-pink);
 }
 
-/* dropdown menu links */
+/* dropdown menu & links */
 a.dropdown-item{
   color: white;
   border-radius: .5rem;
@@ -135,12 +135,23 @@ a.dropdown-item:active{
   border-top: 1px solid var(--pastel-blue);
 }
 
-
-
 .dropdown-menu{
   background-color: var(--Dark);
   margin: .2rem 0 0;
   border: none;
   border-radius: .5rem;
   padding: 1rem 0.5rem;
+}
+
+/* additional colors */
+.text-pink{
+  color: var(--pastel-pink);
+}
+
+.text-blue{
+  color: var(--pastel-blue);
+}
+
+.text-yellow{
+  color: var(--pastel-yellow);
 }
