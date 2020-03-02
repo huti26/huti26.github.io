@@ -1,5 +1,3 @@
-
-
 $theme-colors: (
   "Primary": #2e2e2d,
   "Secondary": #d8d7c8,
@@ -12,4 +10,4 @@ $theme-colors: (
 
 // Import all of bootstrap after overriding variable defaults
 
-@import "../source files/bootstrap/scss/bootstrap";
+@import "./source files/bootstrap/scss/bootstrap";

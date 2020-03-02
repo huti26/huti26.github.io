@@ -67,4 +67,7 @@ $RECYCLE.BIN/
 
 
 # bootstrap source files
-/source files/
+/source files/bootstrap/*
+
+#node modules
+/node_modules/*
