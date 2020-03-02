@@ -3,6 +3,8 @@
   --pastel-blue: #aec6cf;
   --pastel-yellow: #fdfd96;
   --pastel-purple: #b39eb5;
+  --Dark: #1E1E1E;
+
 }
 
 
@@ -96,24 +98,49 @@ body {
   height: 60px;
 }
 
-/* link styling */
-
-/* unvisited link */
+/* normal links */
 a:link {
   color: var(--pastel-yellow);
 }
 
-/* visited link */
 a:visited {
   color: var(--pastel-blue);
 }
 
-/* mouse over link */
 a:hover {
+  color: var(--pastel-yellow);
+}
+
+a:active {
   color: var(--pastel-pink);
 }
 
-/* selected link */
-a:active {
-  color: var(--pastel-purple);
+/* dropdown menu links */
+a.dropdown-item{
+  color: white;
+  border-radius: .5rem;
+}
+
+a.dropdown-item:hover,a.dropdown-item:focus{
+  color: white;
+  background-color: var(--Dark);
+}
+
+a.dropdown-item:active{
+  color: black;
+  background-color: var(--pastel-pink);
+}
+
+.dropdown-divider{
+  border-top: 1px solid var(--pastel-blue);
+}
+
+
+
+.dropdown-menu{
+  background-color: var(--Dark);
+  margin: .2rem 0 0;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 0.5rem;
 }
