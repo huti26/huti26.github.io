@@ -1,3 +1,10 @@
+:root {
+  --pastel-pink: #ffd1dc;
+  --pastel-blue: #aec6cf;
+  --pastel-yellow: #fdfd96;
+}
+
+
 /* GENERAL CHANGES */
 .contact-div{
   text-align: center;
@@ -61,11 +68,29 @@ input[type=number] {
 }
 
 
-/* border under title */
-
+/* markdown-like border under title */
 hr{
   margin-top: 0;
-  background-color: #aec6cf;
+  background-color: var(--pastel-blue);
   border-top: 3px solid rgba(0,0,0,.1);
   border-radius: 0.5rem;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
 }
