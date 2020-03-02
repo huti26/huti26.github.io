@@ -39,10 +39,11 @@ body {
   background-color: #1E1E1E ;
   color: #f8f9fa;
   border-color: #000000;
+  border-radius: 0.5rem;
 }
 
 .form-control:focus, .custom-select:focus{
-  box-shadow: 0 0 0 0.2rem rgba(100, 82, 86, 1);
+  box-shadow: 0 0 0 0.15rem rgba(255,209,220,0.9);
   border-color: #000000;
 }
 
@@ -57,4 +58,14 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance:textfield;
+}
+
+
+/* border under title */
+
+hr{
+  margin-top: 0;
+  background-color: #aec6cf;
+  border-top: 3px solid rgba(0,0,0,.1);
+  border-radius: 0.5rem;
 }
