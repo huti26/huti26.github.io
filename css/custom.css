@@ -3,7 +3,7 @@
   --pastel-blue: #aec6cf;
   --pastel-yellow: #fdfd96;
   --pastel-purple: #b39eb5;
-  --Dark: #1E1E1E;
+  --Dark: #1D1D1D;
 
 }
 
@@ -41,20 +41,20 @@ body {
 
 
 .toggle-handle{
-  background-color: #1E1E1E ;
+  background-color: #1D1D1D ;
 }
 
 /* dark form */
 .form-control, .form-control:focus, .custom-select{
-  background-color: #1E1E1E ;
+  background-color: #1D1D1D ;
   color: #f8f9fa;
-  border-color: #000000;
+  border-color: #1D1D1D;
   border-radius: 0.5rem;
 }
 
 .form-control:focus, .custom-select:focus{
   box-shadow: 0 0 0 0.15rem rgba(255,209,220,0.9);
-  border-color: #000000;
+  border-color: #1D1D1D;
 }
 
 /* hide arrow of number input */

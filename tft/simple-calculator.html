@@ -82,99 +82,101 @@
 
     <div class="container ">
 
-        <div class="pt-3 md-title">
-            <h1>Simple Calculator</h1>
-        </div>
 
-        <hr>
-        </hr>
 
-        <div name="custom scenario" class="pt-1">
-            <div class="row py-2">
-                <div class="col">
-                    Desired Champion Tier
+        <div class="card bg-info mt-5">
+            <div class="card-header bg-dark">
+                <h1>Simple Calculator</h1>
+            </div>
+            <div name="custom scenario" class="card-body">
+                <div class="row py-2">
+                    <div class="col">
+                        Desired Champion Tier
+                    </div>
+                    <div class="col">
+                        <select class="custom-select" id="tier" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+
                 </div>
-                <div class="col">
-                    <select class="custom-select" id="tier" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+
+                <div class="row py-2">
+                    <div class="col">
+                        Your Level
+                    </div>
+                    <div class="col">
+                        <select class="custom-select" id="level" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+
                 </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        Your Gold
+                    </div>
+                    <div class="col">
+                        <input type="number" min="1" max="200" class="form-control" value="50" id="gold" required>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        Amount of times your desired Champion has already been picked
+                    </div>
+                    <div class="col">
+                        <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked"
+                            required>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        Amount of times other Champions of the same Tier have already been picked
+                    </div>
+                    <div class="col">
+                        <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked"
+                            required>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                    </div>
+                    <div class="col ">
+                        <button onclick="tftUnluckCalc()" class="btn btn-dark float-right"
+                            id="tft-calc-btn">Calculate</button>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        <p id="custom-tft-scenario-result" class="float-right">
+                            0.00%
+                        </p>
+                    </div>
+                </div>
+
+
+
 
 
             </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Your Level
-                </div>
-                <div class="col">
-                    <select class="custom-select" id="level" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                    </select>
-                </div>
-
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Your Gold
-                </div>
-                <div class="col">
-                    <input type="number" min="1" max="200" class="form-control" value="50" id="gold" required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Amount of times your desired Champion has already been picked
-                </div>
-                <div class="col">
-                    <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked" required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    Amount of times other Champions of the same Tier have already been picked
-                </div>
-                <div class="col">
-                    <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked"
-                        required>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                </div>
-                <div class="col ">
-                    <button onclick="tftUnluckCalc()" class="btn btn-outline-light float-right"
-                        id="tft-calc-btn">Calculate</button>
-                </div>
-            </div>
-
-            <div class="row py-2">
-                <div class="col">
-                    <p id="custom-tft-scenario-result" class="float-right">
-                        0.00%
-                    </p>
-                </div>
-            </div>
-
-
-
-
 
         </div>
 
