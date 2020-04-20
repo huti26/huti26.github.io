@@ -6,6 +6,7 @@
   --Dark: #1d1d1d;
   --Primary: #373737;
   --Info: #2c2c2c;
+  --Secondary: #d8d7c8;
 }
 
 /* GENERAL CHANGES */
@@ -142,4 +143,9 @@ a.dropdown-item:active {
 
 .text-yellow {
   color: var(--pastel-yellow);
+}
+
+/* Tables */
+.table {
+  color: white;
 }
