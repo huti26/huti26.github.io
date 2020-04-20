@@ -13,18 +13,6 @@
   text-align: center;
 }
 
-/*
-.navbar {
-  background-color: #252526 !important;
-  color: rgb(221, 221, 221);
-}
-*/
-
-/* get font awesome icons to stay aligned */
-.falign {
-  line-height: inherit;
-}
-
 /* hide scrollbar in chrome/safari */
 ::-webkit-scrollbar {
   display: none;
