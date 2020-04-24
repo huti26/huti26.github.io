@@ -13,15 +13,15 @@ function unique_champs(unit_tier) {
 function throw_chance(player_level, unit_tier) {
   // chances[2][1] = chance to roll t2 unit on level 3
   chances = [
-    [1.0, 0.0, 0.0, 0.0, 0.0],
-    [1.0, 0.0, 0.0, 0.0, 0.0],
-    [0.7, 0.3, 0.0, 0, 00, 0.0],
-    [0.5, 0.35, 0.15, 0, 00, 0.0],
-    [0.35, 0.4, 0.2, 0.05, 0.0],
-    [0.2, 0.35, 0.35, 0.1, 0.0],
-    [0.14, 0.3, 0.4, 0.15, 0.01],
-    [0.14, 0.2, 0.35, 0.25, 0.06],
-    [0.1, 0.15, 0.25, 0.35, 0.15],
+    [1.00, 0.00, 0.00, 0.00, 0.00],
+    [1.00, 0.00, 0.00, 0.00, 0.00],
+    [0.70, 0.30, 0.00, 0.00, 0.00],
+    [0.50, 0.35, 0.15, 0.00, 0.00],
+    [0.35, 0.40, 0.20, 0.05, 0.00],
+    [0.20, 0.35, 0.35, 0.10, 0.00],
+    [0.14, 0.30, 0.40, 0.15, 0.01],
+    [0.14, 0.20, 0.35, 0.25, 0.06],
+    [0.10, 0.15, 0.25, 0.35, 0.15],
   ];
   return chances[player_level - 1][unit_tier - 1];
 }
@@ -71,8 +71,8 @@ function tftUnluckCalc() {
   if (champ_picked < 0 || champ_picked > max_champ_picked) {
     alert(
       "Amount of times your desired Champion has already been picked must be between 0 and " +
-        max_champ_picked +
-        "."
+      max_champ_picked +
+      "."
     );
     return false;
   }
@@ -85,8 +85,8 @@ function tftUnluckCalc() {
   ) {
     alert(
       "Amount of times other Champions of the same Tier have already been picked must be between 0 and " +
-        max_other_champs_picked +
-        "."
+      max_other_champs_picked +
+      "."
     );
     return false;
   }
