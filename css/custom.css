@@ -149,3 +149,10 @@ a.dropdown-item:active {
 .table {
   color: white;
 }
+
+
+
+
+iframe {
+  border:none;
+}

@@ -1,342 +1,112 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>huti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>huti</title>
 
-    <!-- ****** faviconit.com Favicons ****** -->
-    <link rel="shortcut icon" href="/faviconit/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/faviconit/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="/faviconit/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/faviconit/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/faviconit/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/faviconit/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/faviconit/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/faviconit/favicon-16.png">
-    <link rel="apple-touch-icon" href="/faviconit/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/faviconit/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/faviconit/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/faviconit/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/faviconit/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/faviconit/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/faviconit/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/faviconit/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/faviconit/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/faviconit/favicon-144.png">
-    <meta name="msapplication-config" content="/faviconit/browserconfig.xml">
-    <!-- ****** faviconit.com Favicons ****** -->
+  <!-- ****** faviconit.com Favicons ****** -->
+  <link rel="shortcut icon" href="/faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="/faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="/faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="/faviconit/browserconfig.xml">
+  <!-- ****** faviconit.com Favicons ****** -->
 
-    <script src="../js/jquery-3.4.1.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/c3bbeb30ce.js" crossorigin="anonymous"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/c3bbeb30ce.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../bootstrap/css/custom-bootstrap.css">
-    <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../bootstrap/css/custom-bootstrap.css">
+  <link rel="stylesheet" href="../css/custom.css">
 
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
-    <script src="../js/tft.js"></script>
+  <script src="../js/tft.js"></script>
+
+
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#graph1").load("p1.html");
+    });
+  </script>
+
+
 
 
 </head>
 
 <body class="bg-primary text-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container ">
-            <a class="navbar-brand" href="../about">H26</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container ">
+      <a class="navbar-brand" href="../about">H26</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../">Home </a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Teamfight Tactics
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="simple-examples">Examples</a>
-                            <a class="dropdown-item" href="simple-calculator">Calculator</a>
-                            <a class="dropdown-item" href="how-it-calculates">How it calculates</a>
-                        </div>
-                    </li>
-                </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="../">Home </a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Teamfight Tactics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="simple-examples">Examples</a>
+              <a class="dropdown-item" href="simple-calculator">Calculator</a>
+              <a class="dropdown-item" href="how-it-calculates">How it calculates</a>
             </div>
-
-        </div>
-    </nav>
-    
-    <div class="container pb-3">
-
-        <div class="card bg-info mt-3">
-            <div class="card-header bg-dark">
-                <h1>Basic Examples</h1>
-            </div>
-            <div class="card-body">
-                <p>
-                    Gold rolled is 50. A clean board state is assumed: Not a single champion has been picked so far! Take these numbers with a grain of salt. Further below one can see, that the hit chance is reduced a fair bit, if other people have already picked the champion you desire. The following numbers are most useful, if you are ahead, leveled quickly & you are trying to all in on getting one certain champion, which noone picked yet.
-                </p>
-
-                <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Level 4
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>T3 Unit</td>
-                            <td>76.56%
-                            </td>
-                        </tr>
-                    </tbody>
-                  </table>  
-
-                <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Level 5
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>T3 Unit</td>
-                            <td>85.60%
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>T4 Unit</td>
-                            <td>50.16%
-                            </td>
-                        </tr>
-                    </tbody>
-                  </table>  
-
-                <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Level 6
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>T3 Unit</td>
-                            <td>96.70%</td>
-                        </tr>
-                        <tr>
-                            <td>T4 Unit</td>
-                            <td>75.26%
-                            </td>
-                        </tr>
-                    </tbody>
-                  </table>  
-
-                  <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Level 7
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>T3 Unit</td>
-                            <td>97.99%
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>T4 Unit</td>
-                            <td>87.77%
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>T5 Unit</td>
-                            <td>16.36%
-                            </td>
-                        </tr>
-                    </tbody>
-                  </table>  
-
-                  <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Level 8
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>T5 Unit</td>
-                            <td>65.91%
-                            </td>
-                        </tr>
-                    </tbody>
-                  </table>  
-
-
-
-
-            </div>
-            
-        
+          </li>
+        </ul>
+      </div>
 
     </div>
+  </nav>
+
+  <div class="container mt-3">
 
 
-    <div class="pb-3">
+    <iframe src="p1.html" width=100% height=90% class=""></iframe>
 
-        <div class="card bg-info mt-3">
-            <div class="card-header bg-dark">
-                <h1>Impact of Champion Pool</h1>
-            </div>
-            <div class="card-body">
-                <p>
-                    Gold rolled is 50.
-                </p>
-                <table class="table table-borderless table-sm ">
-                    <thead>
-                      <tr>
-                        <th scope="col">Champ Tier
-                        </th>
-                        <th scope="col">Your Level
-                        </th>
-                        <th scope="col">Picked Amount*</th>
-                        <th scope="col">Others Picked**</th>
-                        <th scope="col">Hit Chance</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>3</td>
-                        <td>6</td>
-                        <td></td>
-                        <td></td>
-                        <td>96.70%</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>9</td>
-                        <td></td>
-                        <td>78.74%</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>9</td>
-                        <td>12</td>
-                        <td>80.77%</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>6</td>
-                        <td></td>
-                        <td></td>
-                        <td>75.26%</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>6</td>
-                        <td></td>
-                        <td>52.17%</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>6</td>
-                        <td>9</td>
-                        <td>55.47%</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>7</td>
-                        <td></td>
-                        <td></td>
-                        <td>16.36%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td></td>
-                        <td>12.25%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>13.37%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
 
-                    </tbody>
-                  </table>
+  </div>
 
-                  <br></br>
-                  <p>My personal opinion on this:</p>
 
-                  <p> When other people already have a certain champ multiple times, one should definitely take that into account. Other champions of the same tier already being picked can be neglected, when one is trying to make quick decisions ingame.</p>
-                  <br></br>
-                  <br></br>
-                  
-                  <p>*Picked Amount means how many times the desired champ has already been picked.</p>
-                  <p>**Others picked means how many times other champions of the same tier as the desired one have already been picked.</p>
 
-            </div>
-            
-        
 
+
+
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <p class="text-right font-italic">
+        Last edited 20.04.2020, Patch 10.7.
+      </p>
     </div>
+  </footer>
 
-
-
-
-
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-          <p class="text-right font-italic">
-            Last edited 20.04.2020, Patch 10.7.
-          </p>
-        </div>
-      </footer>
-  
 
 
 
