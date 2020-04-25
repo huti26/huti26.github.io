@@ -39,6 +39,17 @@
   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
   <script src="./js/tft.js"></script>
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+
+
 </head>
 
 <body class="bg-primary text-light">
@@ -77,7 +88,7 @@
       <div name="custom scenario" class="card-body">
         <div class="row py-2">
           <div class="col">
-            Desired Champion Tier
+            Champion Tier
           </div>
           <div class="col">
             <select class="custom-select" id="tier" required>
@@ -120,7 +131,11 @@
 
         <div class="row py-2">
           <div class="col">
-            Amount of times your desired Champion has already been picked
+            Champion picked <a tabindex="0" class="btn btn-dark btn-xs btn-circle" data-container="body"
+              data-toggle="popover" data-trigger="focus" data-placement="right" data-html="true"
+              data-content="<p>Amount of times your desired champion has already been picked. </p>">
+              <i class=" fas fa-question"></i>
+            </a>
           </div>
           <div class="col">
             <input type="number" min="0" max="500" class="form-control" value="0" id="champ_picked" required />
@@ -129,8 +144,11 @@
 
         <div class="row py-2">
           <div class="col">
-            Amount of times other Champions of the same Tier have already been
-            picked
+            Others picked <a tabindex="0" class="btn btn-dark btn-xs btn-circle" data-container="body"
+              data-toggle="popover" data-trigger="focus" data-placement="auto" data-html="true"
+              data-content="<p>Amount of times other champions of the same tier as your desired champion have already been picked. </p>">
+              <i class=" fas fa-question"></i>
+            </a>
           </div>
           <div class="col">
             <input type="number" min="0" max="500" class="form-control" value="0" id="other_champs_picked" required />

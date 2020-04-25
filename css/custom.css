@@ -175,6 +175,16 @@ iframe {
 
 
 /* round buttons */
+
+.btn-circle.btn-xs { 
+  width: 20px; 
+  height: 20px; 
+  padding: 4px 0px; 
+  border-radius: 15px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+
 .btn-circle.btn-sm { 
   width: 30px; 
   height: 30px; 
@@ -203,6 +213,7 @@ iframe {
 
 /* popover */
 
+/*
 .popover {
   top: 60px !important;
   max-width: 50%;
@@ -210,3 +221,4 @@ iframe {
 .popover .arrow {
   top: 21px !important;
 }
+*/
