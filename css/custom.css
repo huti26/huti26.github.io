@@ -115,6 +115,10 @@ a.dropdown-item:focus {
   background-color: var(--Info);
 }
 
+a.dropdown-toggle:focus{
+  outline: none;
+}
+
 a.dropdown-item:active {
   color: white;
   background-color: var(--Dark);
