@@ -40,6 +40,13 @@
 
   <script src="./js/tft.js"></script>
 
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 
 </head>
 
@@ -77,7 +84,20 @@
 
     <div id="img_container">
       <img src="plot4.png" width="100%"> </img>
-      <button class="btn btn-info btn-sm help-button btn-circle"><i class="fas fa-question"></i></button>
+      <button class="btn btn-info btn-sm help-button btn-circle" data-container="body" data-toggle="popover"
+        data-placement="left" data-html="true" data-content="<p> It is assumed, that you just hit Level 5 and now you want to get one specific Epic unit.</p>
+         <p> The Level 6 graph starts 20 gold further to the right, because leveling from 5 to 6 costs 20 gold. So the first yellow point at Gold=30 means:
+          <p> 30 gold spent in total <br>
+          20 gold spent for leveling to 6 <br>
+          10 gold spent to roll after hitting 6 <br>
+          24% chance to get your desired Epic </p>
+         </p>
+         <p>
+          Once you have more than 40 gold you will get better results by leveling to 6. Leveling to 7 on the other hand is only worth it once you have more than 120 gold.
+         </p>">
+        <i class="fas fa-question"></i>
+      </button>
+
     </div>
 
 
