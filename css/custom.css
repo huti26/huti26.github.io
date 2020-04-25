@@ -199,3 +199,13 @@ iframe {
   font-size: 12px; 
   text-align: center; 
 } 
+
+
+/* popover */
+
+.popover {
+  top: 60px !important;
+}
+.popover .arrow {
+  top: 20px !important;
+}
