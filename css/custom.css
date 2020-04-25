@@ -107,6 +107,7 @@ a:active {
 a.dropdown-item {
   color: white;
   border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 a.dropdown-item:hover,
