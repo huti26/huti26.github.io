@@ -30276,20 +30276,18 @@ K.Is.prototype={
 E:function(a,b){var s=this,r=null
 return M.VB(A.Qs(new T.br(C.ml,T.i1(H.b([new R.CY("EAN (8 or 13 Digit Code)",s.e,r),new R.lj("Name",s.f,r),new R.lj("Brand",s.r,r),new R.j_("Calories per 100 gram",s.x,r),new R.j_("Carbs per 100 gram",s.y,r),new R.j_("Proteins per 100 gram",s.z,r),new R.j_("Fats per 100 gram",s.Q,r),new R.j_("Package Size in gram",s.ch,r),new R.j_("Package Price in \u20ac",s.cx,r),D.hr(L.ax("Submit",r,r,r,r,r),new K.a1Q(s))],t.t),C.hu,C.a4,C.at),r),s.d),new E.lR(r),r,r)},
 pb:function(a){P.kR(this.cx.a.a)},
-IY:function(){var s,r,q,p,o,n,m,l,k,j,i,h=this
-if(h.d.gaA().lb()){s=O.Q1(K.hf("[DEFAULT]"))
+IY:function(){var s,r,q,p,o,n,m,l,k,j=this
+if(j.d.gaA().lb()){s=O.Q1(K.hf("[DEFAULT]"))
 s=O.Nu(s,s.giY().ib(0,"foods"))
-r=P.kT(h.e.a.a,null)
-q=h.f.a.a
-p=h.r.a.a
-o=h.pb(P.kR(h.x.a.a))
-n=h.pb(P.kR(h.y.a.a))
-m=h.pb(P.kR(h.z.a.a))
-l=h.pb(P.kR(h.Q.a.a))
-k=P.kR(h.ch.a.a)
-j=P.kR(h.cx.a.a)
-i=A.jH()
-s.G(0,P.ag(["ean",r,"name",q,"brand",p,"calories",o,"carbs",n,"proteins",m,"fats",l,"packagesize",k,"packageprice",j,"submitterUID",i.geC(i).a.c.h(0,"uid")],t.X,t.z)).bO(0,new K.a1R(h),t.P).e2(new K.a1S())}}}
+r=P.kT(j.e.a.a,null)
+q=j.pb(P.kR(j.x.a.a))
+p=j.pb(P.kR(j.y.a.a))
+o=j.pb(P.kR(j.z.a.a))
+n=j.pb(P.kR(j.Q.a.a))
+m=P.kR(j.ch.a.a)
+l=P.kR(j.cx.a.a)
+k=A.jH()
+s.G(0,P.ag(["ean",r,"name","nameController.text","brand","brandController.text","calories",q,"carbs",p,"proteins",o,"fats",n,"packagesize",m,"packageprice",l,"submitterUID",k.geC(k).a.c.h(0,"uid")],t.X,t.z)).bO(0,new K.a1R(j),t.P).e2(new K.a1S())}}}
 K.a1Q.prototype={
 $0:function(){this.a.IY()},
 $S:0}
