@@ -1,128 +1,62 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>huti</title>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-  <!-- ****** faviconit.com Favicons ****** -->
-  <link rel="shortcut icon" href="/faviconit/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="/faviconit/favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="/faviconit/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="/faviconit/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/faviconit/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/faviconit/favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/faviconit/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/faviconit/favicon-16.png">
-  <link rel="apple-touch-icon" href="/faviconit/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/faviconit/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/faviconit/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/faviconit/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/faviconit/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/faviconit/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/faviconit/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/faviconit/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/faviconit/favicon-180.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="/faviconit/favicon-144.png">
-  <meta name="msapplication-config" content="/faviconit/browserconfig.xml">
-  <!-- ****** faviconit.com Favicons ****** -->
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Mealprep">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <script src="./js/jquery-3.4.1.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/c3bbeb30ce.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <link rel="stylesheet" href="./bootstrap/css/custom-bootstrap.css" />
-  <link rel="stylesheet" href="./css/custom.css" />
-
-  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet" />
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
-  <script src="./js/tft.js"></script>
-
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <title>Mealprep</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    $(function () {
-      $('[data-toggle="popover"]').popover()
-    })
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
   </script>
 
-</head>
 
-<body class="">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container ">
-      <a class="navbar-brand" href="about">H26</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto ">
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Teamfight Tactics
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/">Examples</a>
-              <a class="dropdown-item" href="simple-calculator">Calculator</a>
-              <a class="dropdown-item" href="how-it-calculates">How it calculates</a>
-              <a class="dropdown-item" href="sources">Sources</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCr6N3m9fFmA-ipBTShKxKoiEz4YjFX1cg",
+      authDomain: "mealprep-d9d22.firebaseapp.com",
+      databaseURL: "https://mealprep-d9d22.firebaseio.com",
+      projectId: "mealprep-d9d22",
+      storageBucket: "mealprep-d9d22.appspot.com",
+      messagingSenderId: "101271951753",
+      appId: "1:101271951753:web:73a59d759cd09eacce2958",
+      measurementId: "G-FCHERVNBJB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
-    </div>
-  </nav>
-
-  <div class="container mt-3">
-
-
-    <div id="img_container">
-      <img src="plot4.png" width="100%"> </img>
-      <a tabindex="0" class="btn btn-primary btn-sm help-button btn-circle text-light" data-container="body"
-        data-toggle="popover" data-trigger="focus" data-placement="auto" data-html="true" data-content="<p> It is assumed, that you just hit Level 5 and now you want to get one specific Epic unit.</p>
-         <p> The Level 6 graph starts 20 gold further to the right, because leveling from 5 to 6 costs 20 gold. So the first yellow point at Gold=30 means:
-          <p> 30 gold spent in total <br>
-          20 gold spent for leveling to 6 <br>
-          10 gold spent to roll after hitting 6 <br>
-          24% chance to get your desired Epic </p>
-         </p>
-         <p>
-          Once you have more than 40 gold you will get better results by leveling to 6. Leveling to 7 on the other hand is only worth it once you have more than 120 gold.
-         </p>">
-        <i class="fas fa-question"></i>
-      </a>
-
-    </div>
-
-
-  </div>
-
-
-
-
-
-
-
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <p class="text-right font-italic">
-        Last edited 20.04.2020, Patch 10.7.
-      </p>
-    </div>
-  </footer>
-
-
-
-
-
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
-
-
 </html>
