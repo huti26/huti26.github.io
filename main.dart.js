@@ -30277,7 +30277,7 @@ K.Ir.prototype={
 E:function(a,b){var s=this,r=null
 return M.VB(A.Qs(new T.br(C.ml,T.i1(H.b([new R.CX("EAN (8 or 13 Digit Code)",s.e,r),new R.lg("Name",s.f,r),new R.lg("Brand",s.r,r),new R.j_("Calories per 100 gram",s.x,r),new R.j_("Carbs per 100 gram",s.y,r),new R.j_("Proteins per 100 gram",s.z,r),new R.j_("Fats per 100 gram",s.Q,r),new R.j_("Package Size in gram",s.ch,r),new R.j_("Package Price in \u20ac",s.cx,r),D.hr(L.ax("Submit",r,r,r,r,r),new K.a1Q(s))],t.t),C.hu,C.a4,C.at),r),s.d),new E.lP(r),r,r)},
 IX:function(){if(this.d.gaA().lb()){var s=O.Q1(K.hf("[DEFAULT]"))
-O.Nu(s,s.giY().ib(0,"foods")).G(0,P.ag(["ean",1,"name","a","brand","a","calories",1,"carbs",1,"proteins",1,"fats",1,"packagesize",1,"packageprice",1,"submitterUID",1],t.X,t.z)).bO(0,new K.a1R(this),t.P).e2(new K.a1S())}}}
+O.Nu(s,s.giY().ib(0,"foods")).G(0,P.ag(["ean",1,"name","aba","brand","aoso","calories",1,"carbs",1,"proteins",1,"fats",1,"packagesize",1,"packageprice",1,"submitterUID",1],t.X,t.z)).bO(0,new K.a1R(this),t.P).e2(new K.a1S())}}}
 K.a1Q.prototype={
 $0:function(){this.a.IX()},
 $S:0}
