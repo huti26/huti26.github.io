@@ -1,0 +1,225 @@
+:root {
+  --pastel-pink: #ffd1dc;
+  --pastel-blue: #aec6cf;
+  --pastel-yellow: #fdfd96;
+  --pastel-purple: #b39eb5;
+  --Dark: #1d1d1d;
+  --Primary: #373737;
+  --Info: #2c2c2c;
+  --Secondary: #d8d7c8;
+}
+
+/* GENERAL CHANGES */
+.contact-div {
+  text-align: center;
+}
+
+/* hide scrollbar in chrome/safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* hide scrollbar in firefox */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.toggle-handle {
+  background-color: #1d1d1d;
+}
+
+/* dark form */
+.form-control,
+.form-control:focus,
+.custom-select {
+  background-color: #1d1d1d;
+  color: #f8f9fa;
+  border-color: #1d1d1d;
+  border-radius: 0.5rem;
+}
+
+.form-control:focus,
+.custom-select:focus {
+  border-color: #1d1d1d;
+}
+
+/* hide arrow of number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* markdown-like border under title */
+hr {
+  margin-top: 0;
+  background-color: var(--pastel-blue);
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+/* normal links */
+a:link {
+  color: var(--pastel-yellow);
+}
+
+a:visited {
+  color: var(--pastel-blue);
+}
+
+a:hover {
+  color: var(--pastel-yellow);
+}
+
+a:active {
+  color: var(--pastel-pink);
+}
+
+/* dropdown menu & links */
+a.dropdown-item {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+a.dropdown-item:hover,
+a.dropdown-item:focus {
+  color: white;
+  background-color: var(--Info);
+}
+
+a.dropdown-toggle:focus{
+  outline: none;
+}
+
+a.dropdown-item:active {
+  color: white;
+  background-color: var(--Dark);
+}
+
+.dropdown-divider {
+  border-top: 1px solid var(--pastel-blue);
+}
+
+.dropdown-menu {
+  background-color: var(--Dark);
+  margin: 0.2rem 0 0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+/* additional colors */
+.text-pink {
+  color: var(--pastel-pink);
+}
+
+.text-blue {
+  color: var(--pastel-blue);
+}
+
+.text-yellow {
+  color: var(--pastel-yellow);
+}
+
+/* Tables */
+.table {
+  color: white;
+}
+
+
+iframe {
+  border:none;
+}
+
+
+/* help button on top of plot */
+
+#img_container {
+  position:relative;
+  display:inline-block;
+}
+
+.help-button {
+  position:absolute;
+  top:15px;
+  right:15px;
+}
+
+
+/* round buttons */
+
+.btn-circle.btn-xs { 
+  width: 20px; 
+  height: 20px; 
+  padding: 4px 0px; 
+  border-radius: 15px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+
+.btn-circle.btn-sm { 
+  width: 30px; 
+  height: 30px; 
+  padding: 6px 0px; 
+  border-radius: 15px; 
+  font-size: 14px; 
+  text-align: center; 
+} 
+.btn-circle.btn-md { 
+  width: 50px; 
+  height: 50px; 
+  padding: 7px 10px; 
+  border-radius: 25px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+.btn-circle.btn-xl { 
+  width: 70px; 
+  height: 70px; 
+  padding: 10px 16px; 
+  border-radius: 35px; 
+  font-size: 12px; 
+  text-align: center; 
+} 
+
+
+/* popover */
+
+/*
+.popover {
+  top: 60px !important;
+  max-width: 50%;
+}
+.popover .arrow {
+  top: 21px !important;
+}
+*/
