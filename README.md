@@ -2,6 +2,11 @@
 
 Website to test out Bootstrap, JavaScript & Webdevelopment basics. Filled with a bit of statistics regarding Teamfight Tactics.
 
+# To Do
+- update dependencies
+- test if using svg instead of png is better
+- update numbers to latest tft patch
+
 # Building
 
 Clone the repo
