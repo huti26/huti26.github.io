@@ -1,12 +1,12 @@
 // 29 Tier 1 Champs, 10 Tier 5 Champs
 function champ_pool(unit_tier) {
-  champ_pool_per_tier = [29, 22, 16, 12, 10];
+  champ_pool_per_tier = [29, 22, 18, 12, 10];
   return champ_pool_per_tier[unit_tier - 1];
 }
 
 // 12 different Tier 1 Champs exist
 function unique_champs(unit_tier) {
-  champ_count_per_tier = [12, 12, 13, 9, 7];
+  champ_count_per_tier = [13, 13, 13, 11, 8];
   return champ_count_per_tier[unit_tier - 1];
 }
 
@@ -15,13 +15,13 @@ function throw_chance(player_level, unit_tier) {
   chances = [
     [1.00, 0.00, 0.00, 0.00, 0.00],
     [1.00, 0.00, 0.00, 0.00, 0.00],
-    [0.70, 0.30, 0.00, 0.00, 0.00],
-    [0.50, 0.35, 0.15, 0.00, 0.00],
-    [0.35, 0.40, 0.20, 0.05, 0.00],
-    [0.20, 0.35, 0.35, 0.10, 0.00],
-    [0.14, 0.30, 0.40, 0.15, 0.01],
-    [0.14, 0.20, 0.35, 0.25, 0.06],
-    [0.10, 0.15, 0.25, 0.35, 0.15],
+    [0.75, 0.25, 0.00, 0.00, 0.00],
+    [0.55, 0.30, 0.15, 0.00, 0.00],
+    [0.45, 0.33, 0.20, 0.02, 0.00],
+    [0.35, 0.35, 0.25, 0.05, 0.00],
+    [0.22, 0.35, 0.30, 0.12, 0.01],
+    [0.15, 0.25, 0.35, 0.20, 0.05],
+    [0.10, 0.15, 0.30, 0.30, 0.15],
   ];
   return chances[player_level - 1][unit_tier - 1];
 }
