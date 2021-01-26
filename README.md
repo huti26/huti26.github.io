@@ -6,6 +6,7 @@ Website to test out Bootstrap, JavaScript & Webdevelopment basics. Filled with a
 - update dependencies
 - test if using svg instead of png is better
 - update numbers to latest tft patch
+- replace precise calculation with simulation based one, because its easier to understand & allows for more complex scenarios
 
 # Building
 
