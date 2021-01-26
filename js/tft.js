@@ -1,3 +1,6 @@
+// DATA
+// For ease of use champ_pool(5) can be called to get the champ pool size for legendaries
+
 // 29 Tier 1 Champs, 10 Tier 5 Champs
 function champ_pool(unit_tier) {
   champ_pool_per_tier = [29, 22, 18, 12, 10];
@@ -26,6 +29,10 @@ function throw_chance(player_level, unit_tier) {
   return chances[player_level - 1][unit_tier - 1];
 }
 
+
+
+// Precise-Calculator
+// Precise way of determining the chance to hit a certain unit at least once
 function miss_chance(hit_chance, times) {
   not_hit_chance_per_throw = 1 - hit_chance;
   return Math.pow(not_hit_chance_per_throw, times);
