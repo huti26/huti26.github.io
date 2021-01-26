@@ -91,11 +91,11 @@ function tftUnluckCalc() {
     return false;
   }
 
-  console.log(isNaN(tier));
-  console.log(level);
-  console.log(gold);
-  console.log(champ_picked);
-  console.log(other_champs_picked);
+  // console.log(isNaN(tier));
+  // console.log(level);
+  // console.log(gold);
+  // console.log(champ_picked);
+  // console.log(other_champs_picked);
   var chance = chance_calc(
     level,
     tier,
