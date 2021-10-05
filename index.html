@@ -1,5 +1,62 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting to https://pure-waters-78359.herokuapp.com/</title>
-<meta http-equiv="refresh" content="0; URL=https://pure-waters-78359.herokuapp.com/">
-<link rel="canonical" href="https://pure-waters-78359.herokuapp.com/">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Mealprep">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Mealprep</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=334596860');
+      });
+    }
+  </script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCr6N3m9fFmA-ipBTShKxKoiEz4YjFX1cg",
+      authDomain: "mealprep-d9d22.firebaseapp.com",
+      databaseURL: "https://mealprep-d9d22.firebaseio.com",
+      projectId: "mealprep-d9d22",
+      storageBucket: "mealprep-d9d22.appspot.com",
+      messagingSenderId: "101271951753",
+      appId: "1:101271951753:web:73a59d759cd09eacce2958",
+      measurementId: "G-FCHERVNBJB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
