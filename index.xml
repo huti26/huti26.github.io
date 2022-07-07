@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://huti26.github.io/hugo-PaperMod/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Hutan Baghery Moghaddam</title>
+    <link>https://huti26.github.io/</link>
+    <description>Recent content on Hutan Baghery Moghaddam</description>
+    <image>
+      <url>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2019 08:47:11 +0100</lastBuildDate><atom:link href="https://huti26.github.io/hugo-PaperMod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huti26.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://huti26.github.io/hugo-PaperMod/posts/test/</link>
-      <pubDate>Tue, 26 Mar 2019 08:47:11 +0100</pubDate>
+      <title>Lewis Hamilton 2017-2021</title>
+      <link>https://huti26.github.io/posts/formula-1/hamilton-vs-bottas/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://huti26.github.io/hugo-PaperMod/posts/test/</guid>
-      <description></description>
+      <guid>https://huti26.github.io/posts/formula-1/hamilton-vs-bottas/</guid>
+      <description>An analysis of various race statistics in regard to Lewis Hamilton. Hamilton will be compared to his teammate Valteri Bottas and the other Championship Contenders during those years, namely Sebastian Vettel and Max Verstappen.</description>
     </item>
+    
+    
     
   </channel>
 </rss>
