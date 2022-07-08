@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Personal Projects on Hutan Baghery Moghaddam</title>
-    <link>https://huti26.github.io/tags/personal-projects/</link>
-    <description>Recent content in Personal Projects on Hutan Baghery Moghaddam</description>
+    <title>Firebase on Hutan Baghery Moghaddam</title>
+    <link>https://huti26.github.io/tags/firebase/</link>
+    <description>Recent content in Firebase on Hutan Baghery Moghaddam</description>
     <image>
       <url>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huti26.github.io/tags/personal-projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Lewis Hamilton 2017-2021</title>
-      <link>https://huti26.github.io/posts/formula-1/hamilton-vs-bottas/</link>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://huti26.github.io/posts/formula-1/hamilton-vs-bottas/</guid>
-      <description>An analysis of various race statistics in regard to Lewis Hamilton. Hamilton will be compared to his teammate Valteri Bottas and the other Championship Contenders during those years, namely Sebastian Vettel and Max Verstappen.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huti26.github.io/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What I learned from building a Calorietracker/Budgeting WebApp with Flutter and Firebase</title>
       <link>https://huti26.github.io/posts/flutter-calorietracker/flutter-calorietracker/</link>

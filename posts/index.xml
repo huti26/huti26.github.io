@@ -19,5 +19,14 @@
       <description>An analysis of various race statistics in regard to Lewis Hamilton. Hamilton will be compared to his teammate Valteri Bottas and the other Championship Contenders during those years, namely Sebastian Vettel and Max Verstappen.</description>
     </item>
     
+    <item>
+      <title>What I learned from building a Calorietracker/Budgeting WebApp with Flutter and Firebase</title>
+      <link>https://huti26.github.io/posts/flutter-calorietracker/flutter-calorietracker/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://huti26.github.io/posts/flutter-calorietracker/flutter-calorietracker/</guid>
+      <description>Preface Flutter is first and foremost a Framework to create cross-platform applications, but it can also be used to create WebApps. Since I don&amp;rsquo;t have any experience with the three big Web Frameworks: VueJS, React, and Angular, I thought Flutter would be a good fit for me. It also uses Dart instead Javascript. My initial impression was, that this is also an improvement. Since I have not made any proper experiences with other Web Frameworks or Javascript, I won&amp;rsquo;t be able to compare those to Flutter/Dart in this article.</description>
+    </item>
+    
   </channel>
 </rss>
