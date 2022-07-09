@@ -28,5 +28,14 @@
       <description>Preface Flutter is first and foremost a Framework to create cross-platform applications, but it can also be used to create WebApps. Since I don&amp;rsquo;t have any experience with the three big Web Frameworks: VueJS, React, and Angular, I thought Flutter would be a good fit for me. It also uses Dart instead Javascript. My initial impression was, that this is also an improvement. Since I have not made any proper experiences with other Web Frameworks or Javascript, I won&amp;rsquo;t be able to compare those to Flutter/Dart in this article.</description>
     </item>
     
+    <item>
+      <title>Creating a Multi-Process Python Bot to serve Pixiv Images with Discord.py and SQLite</title>
+      <link>https://huti26.github.io/posts/discordbot/discordbot/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://huti26.github.io/posts/discordbot/discordbot/</guid>
+      <description>Preface Discord is a popular chatting platform and there are plenty of bots available, which can entertain you and your friends. There are bots out there, that post images from for example Reddit. The bots do not post the image itself, instead, they post the link to the image, and Discord itself will embed the image into the chat. Pixiv is a Japanese platform on which artists share their creations. At the time I created this bot, embedding images from Pixiv was blocked.</description>
+    </item>
+    
   </channel>
 </rss>
