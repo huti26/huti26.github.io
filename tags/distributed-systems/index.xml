@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Distributed Systems on Hutan Baghery Moghaddam</title>
+    <link>https://huti26.github.io/tags/distributed-systems/</link>
+    <description>Recent content in Distributed Systems on Hutan Baghery Moghaddam</description>
+    <image>
+      <url>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huti26.github.io/tags/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Meta&#39;s RocksDB distributed with UCX to support Infiniband Hardware</title>
+      <link>https://huti26.github.io/posts/distributed-rocksdb/distributed-rocksdb/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://huti26.github.io/posts/distributed-rocksdb/distributed-rocksdb/</guid>
+      <description>RocksDB is a performant embedded Key-Value Store. As part of my Master&amp;#39;s Thesis, I created a distributed version of it. This article goes over the key concepts and what I consider the most interesting parts.</description>
+    </item>
+    
+  </channel>
+</rss>
