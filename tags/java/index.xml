@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java on Hutan Baghery Moghaddam</title>
+    <link>https://huti26.github.io/tags/java/</link>
+    <description>Recent content in Java on Hutan Baghery Moghaddam</description>
+    <image>
+      <url>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://huti26.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huti26.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenJDK&#39;s Project Loom: User-Level Threads in Java</title>
+      <link>https://huti26.github.io/posts/project-loom/project-loom/</link>
+      <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://huti26.github.io/posts/project-loom/project-loom/</guid>
+      <description>Preface Nowadays it is universally known that a Java thread corresponds to a Kernel-Level Thread when looking at it in a very simplified matter. Project Loom is trying to introduce User-Level Threads to the Java ecosystem. They call these User-Level Threads Virtual Threads. Virtual Threads are supossed to increase performance and be more ressource efficient than just using Kernel-Level Threads. It is planned, that Virtual Threads become a drop-in replacement, which would be a free performance boost for any multithreaded Java application.</description>
+    </item>
+    
+  </channel>
+</rss>
